@@ -16,7 +16,9 @@
         android:src="@drawable/na"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/temperatureTextView"
-        android:layout_alignEnd="@+id/temperatureTextView" />
+        android:layout_alignEnd="@+id/temperatureTextView"
+        android:scaleType="fitCenter"
+        android:padding="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,8 +28,7 @@
         android:id="@+id/temperatureTextView"
         android:textStyle="bold"
         android:typeface="serif"
-        android:layout_marginTop="68dp"
-        android:layout_below="@+id/weatherIconImageView"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -36,9 +37,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/condition"
         android:id="@+id/conditionTextView"
-        android:layout_above="@+id/locationTextView"
+        android:layout_below="@+id/temperatureTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="72dp" />
+        android:layout_marginTop="43dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,9 +48,9 @@
         android:text="@string/location"
         android:id="@+id/locationTextView"
         android:textStyle="bold"
-        android:layout_marginBottom="54dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/conditionTextView"
-        android:layout_alignEnd="@+id/conditionTextView" />
+        android:layout_below="@+id/conditionTextView"
+        android:layout_alignLeft="@+id/conditionTextView"
+        android:layout_alignStart="@+id/conditionTextView"
+        android:layout_marginTop="66dp" />
 
 </RelativeLayout>
