@@ -1,4 +1,4 @@
-# NextWeather
+# NXTWeather
 this is an online android weather app that uses yahoo weather API
 
 
